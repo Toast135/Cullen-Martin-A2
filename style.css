@@ -1,0 +1,105 @@
+
+#form {
+	display:none;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+/*Declared colour variables*/
+:root {
+	--main-color: #000664;
+	--header-color: #2C3E50;
+	--nav-color: #4DD0E1;
+	--customer-detail-color: #FCF3CF;
+	--repair-detail-color: #D5F5E3;
+	--courtesy-phone-color: #2874A6;
+	--cost-section-color: #EDBB99;
+	--button-section-color: #EDBB99;
+	--footer-color: #2C3E50;
+	--q-and-a-color: #e9cebb;
+	--JS-button-color: #017dca;
+}
+
+/*Chatbot CSS*/
+
+.botContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.chat {
+	height: 300px;
+	width: 50vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+} 
+
+.messages {
+	display: flex;
+	flex-direction: column;
+	overflow: scroll;
+	height: 90%;
+	width: 100%;
+	background-color: white;
+	padding: 15px;
+	margin: 15px;
+	border-radius: 10px;
+}
+
+#bot {
+	margin-right: auto;
+}
+
+#user {
+	margin-left: auto;
+}
+
+
+.bot {
+	font-family: Consolas, 'Courier New', Menlo, source-code-pro, Monaco,  
+	monospace;
+}
+
+.avatar {
+	height: 25px;
+}
+
+.response {
+	display: flex;
+	align-items: center;
+	margin: 1%;
+}
+
+
+/*uploaded image */
+#display-image{
+	width: 400px;
+	height: 225px;
+	border: 1px solid black;
+	background-position: center;
+	background-size: cover;
+}
+
+
+
+/* Mobile */
+
+@media only screen and (max-width: 980px) {
+	.botContainer {
+			flex-direction: column; 
+			justify-content: flex-start;
+	}
+
+	.chat {
+		width: 75vw;
+		margin: 10vw;
+	}
+}
+
